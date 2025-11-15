@@ -10,7 +10,10 @@ const Navbar=({setshowLogin})=>{
     const [menu,setMenu]=useState("home");
     return(
         <div className="navbar">
-           <img src={assets.logo} alt="logo" className="logo"/>
+            <Link to="/">
+            <img src={assets.logo} alt="logo" className="logo"/>
+            </Link>
+           
            <ul className="navbar-menu">
             <Link to='/' className={menu==="home"?"active":""} onClick={()=>setMenu("home")}>Home</Link>
             <a href='#explore-menu' className={menu==="menu"?"active":""} onClick={()=>setMenu("menu")}>menu</a>
@@ -20,7 +23,10 @@ const Navbar=({setshowLogin})=>{
             <div className="navbar-right">
                 <img src={assets.search_icon} alt="search-icon" className="" />
                 <div className="navbar-search-icon">
+                    <Link to="/cart">
                     <img src={assets.basket_icon} alt="basket-icon" />
+                    </Link>
+                    
                     <div className="dot"></div>
                 </div>
                 <button onClick={()=>setshowLogin(true)}>Sign In</button>

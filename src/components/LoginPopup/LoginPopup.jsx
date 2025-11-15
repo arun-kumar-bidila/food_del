@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { assets } from '../../assets/assets'
 
+import './LoginPopup.css'
+
 const LoginPopup = ({ setshowLogin }) => {
     const [currState, setcurrState] = useState("SignUp")
     return (
         <div className="login-popup">
-            <div className="login-popup-container">
+            <form className="login-popup-container">
                 <div className="login-popup-title">
                     <h2>{currState}</h2>
                     <img src={assets.cross_icon} alt="" onClick={() => setshowLogin(false)} />
@@ -28,7 +30,7 @@ const LoginPopup = ({ setshowLogin }) => {
 
 
 
-            </div>
+            </form>
         </div>
     )
 }
