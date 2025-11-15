@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 20px;
 }
-h1{
+.explore-menu h1{
     color: #262626;
     font-weight: 500;
 
@@ -50,4 +50,11 @@ h1{
 .explore-menu-list-item .active{
     border: 4px solid tomato;
     padding: 2px;
+}
+
+@media(max-width:1050){
+    .explore-menu-text{
+        max-width: 100%;
+        font-size: 14px;
+    }
 }
