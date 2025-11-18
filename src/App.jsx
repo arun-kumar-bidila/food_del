@@ -5,6 +5,7 @@ import Home from './pages/Home/Home'
 import LoginPopup from './components/LoginPopup/LoginPopup'
 import Footer from './components/Footer/Footer'
 import Cart from './pages/Cart/Cart'
+import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 const App = () => {
   const [showLogin, setshowLogin] = useState(false)
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
 
           <Route path="/cart" element={<Cart/>}/>
+          <Route path="/order" element={<PlaceOrder/>}/>
 
 
         </Routes>
