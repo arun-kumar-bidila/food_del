@@ -1,33 +1,32 @@
-import React, { useState } from 'react'
-import Navbar from './components/Navbar/Navbar'
-import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home/Home'
-import LoginPopup from './components/LoginPopup/LoginPopup'
-import Footer from './components/Footer/Footer'
-import Cart from './pages/Cart/Cart'
-import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
-import {ToastContainer,toast} from 'react-toastify'
+import React, { useState } from "react";
+import Navbar from "./components/Navbar/Navbar";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import LoginPopup from "./components/LoginPopup/LoginPopup";
+import Footer from "./components/Footer/Footer";
+import Cart from "./pages/Cart/Cart";
+import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
+import { ToastContainer, toast } from "react-toastify";
+import MyOrders from "./pages/MyOrders/MyOrders";
 const App = () => {
-  const [showLogin, setshowLogin] = useState(false)
+  const [showLogin, setshowLogin] = useState(false);
   return (
     <>
-    <ToastContainer/>
+      <ToastContainer />
       {showLogin ? <LoginPopup setshowLogin={setshowLogin} /> : <></>}
-      <div className='app'>
-
+      <div className="app">
         <Navbar setshowLogin={setshowLogin} />
         <Routes>
           <Route path="/" element={<Home />} />
 
-          <Route path="/cart" element={<Cart/>}/>
-          <Route path="/order" element={<PlaceOrder/>}/>
-
-
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/order" element={<PlaceOrder />} />
+          <Route path="/myorders" element={<MyOrders />} />
         </Routes>
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
