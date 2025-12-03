@@ -16,6 +16,10 @@
     gap: 80px;
 
 }
+
+.footer-content-left img{
+    width: 300px;
+}
 .footer-content-left,.footer-content-center,.footer-content-right{
     display: flex;
     flex-direction: column;
