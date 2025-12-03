@@ -59,6 +59,10 @@
   position: relative;
 }
 
+.navbar-search-icon img{
+ width: 35px;
+}
+
 .navbar-search-icon .dot{
   position: absolute;
   min-width: 10px;
