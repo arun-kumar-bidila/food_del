@@ -47,11 +47,12 @@ const LoginPopup = ({ setshowLogin }) => {
       <form onSubmit={onLogin} className="login-popup-container">
         <div className="login-popup-title">
           <h2>{currState}</h2>
-          <img
+          {/* <img
             src={assets.cross_icon}
             alt=""
             onClick={() => setshowLogin(false)}
-          />
+          /> */}
+          <p onClick={() => setshowLogin(false)}>X</p>
         </div>
         <div className="login-popup-inputs">
           {currState === "Login" ? (

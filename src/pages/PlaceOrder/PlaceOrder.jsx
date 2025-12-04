@@ -53,6 +53,7 @@ const PlaceOrder = () => {
 
     if (response.data.success) {
       toast.success("Order placed");
+      navigate("/myorders")
     } else {
       alert("Error");
     }

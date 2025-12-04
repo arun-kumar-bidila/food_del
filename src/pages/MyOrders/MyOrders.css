@@ -14,26 +14,26 @@
     align-items: center;
     padding: 10px 20px;
     font-size: 14px;
-    color: #454545;
-    border: 1px solid tomato;
+    color: white;
+    border: 1px solid white;
 }
 .my-orders-order img{
     width: 50px;
 }
 .my-orders-order p span{
-    color: tomato;
+    color: green;
 }
 .my-orders-order p b{
     font-weight: 500;
-    color: #454545;
+    color: white;
 }
 .my-orders-order button{
     border: none;
     padding: 12px 0px;
     border-radius: 4px;
-    background-color: #ffe1e1;
+    background-color: green;
     cursor: pointer;
-    color: #454545;
+    color: white;
 }
 
 @media(max-width:900px){
