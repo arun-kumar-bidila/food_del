@@ -38,7 +38,7 @@ const Footer = () => {
       </div>
       <hr />
       <p className="footer-copyright">
-        Copyright 2024 @SvFoods All Rights Reserved
+        Copyright 2025 @SvFoods All Rights Reserved
       </p>
     </div>
   );

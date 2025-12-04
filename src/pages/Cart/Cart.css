@@ -6,12 +6,12 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
     align-items: center;
-    color: grey;
+    color: white;
     font-size: max(1vw,12px);
 }
 .cart-items-item{
     margin: 10px 0px;
-    color: black;
+    color: white;
 
 }
 .cart-items-item img{
@@ -45,26 +45,43 @@
 .cart-total-details{
     display: flex;
     justify-content: space-between;
-    color: #555;
+    color: white;
 }
 .cart-total hr{
     margin: 10px 0px;
 }
+
+
+
 .cart-total button{
     border: none;
     color: white;
-    background-color: tomato;
+    background-color: green;
     width: max(15vw,200px);
     padding: 12px 0px;
     border-radius: 4px;
     cursor: pointer;
 }
+.cart-total button:hover{
+    border: none;
+    color: white;
+    background-color: green;
+    width: max(15vw,200px);
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+
+
 
 .cart-promocode{
     flex: 1;
 }
 .cart-promocode p{
-    color: #555;
+    color: white;
 }
 
 .cart-promocode-input{
@@ -88,6 +105,7 @@
     border: none;
     color: white;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 @media(max-width:750px){
